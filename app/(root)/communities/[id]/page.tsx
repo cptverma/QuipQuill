@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { currentUser } from "@clerk/nextjs";
 
-import { communityTabs } from "@/constants";
+
 
 import UserCard from "@/components/cards/UserCard";
 import ThreadsTab from "@/components/shared/ThreadsTab";
@@ -31,7 +31,7 @@ async function Page({ params }: { params: { id: string } }) {
       <div className='mt-9'>
         <Tabs defaultValue='threads' className='w-full'>
           <TabsList className='tab'>
-            {communityTabs.map((tab) => (
+            {/* {communityTabs.map((tab) => (
               <TabsTrigger key={tab.label} value={tab.value} className='tab'>
                 <Image
                   src={tab.icon}
@@ -48,7 +48,7 @@ async function Page({ params }: { params: { id: string } }) {
                   </p>
                 )}
               </TabsTrigger>
-            ))}
+            ))} */}
           </TabsList>
 
           <TabsContent value='threads' className='w-full text-light-1'>
